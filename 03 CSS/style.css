@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+    /* Paleta de colores */
+    --text: #6D7B93;
+    --title: #1F3E72;
+    --button: #F1F5FF;
+    --color-blue: #3656D4;
+    --lightblue-1: #0A96E5;
+    --lightblue-2: #3563D8;
+
+    /* Fuentes */
+    --text-font: 'Poppins', sans-serif;
+    --title-font: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ----------- navbar ----------- */
+.navbar ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 50px 20px 50px;
+    background: white;
+    backdrop-filter: blur(6px);
+}
+
+.nav-el a {
+    text-decoration: none;
+    color: var(--text);
+    font-family: var(--text-font);
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.logo {
+    font-family: var(--title-font);
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--blue);
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.hoax {
+    background-color: var(--color-blue);
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: none;
+    width: 110px;
+    height: 40px;
+    margin-left: 10px;
+    box-shadow: 0px 15px 18px -15px var(--color-blue);
+    cursor: pointer;
+}
+
+/* ----------- first section ----------- */
+.presentation {
+    height: 63vw;
+}
+
+.pres-text, .pres-image {
+    display: inline;
+}
+
+.pres-text {
+    padding: 50px;
+    float: left;
+    width: 40vw;
+}
+
+.pres-image {
+    float: right;
+    padding-top: 50px;
+    background: var(--lightblue-1);
+    background: linear-gradient(112deg, var(--lightblue-1) 0%, var(--lightblue-2) 100%);
+}
+
+.pres-text-first {
+    margin-bottom: 10vw;
+}
+
+.pres-text-first h1 {
+    font-family: var(--title-font);
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: var(--title);
+    margin: 0;
+}
+
+.pres-text-first p {
+    font-family: var(--text-font);
+    font-size: 13px;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.pres-image img {
+    width: 45vw;
+}
+
+.pres-options li {
+    display: inline;
+}
+
+.pres-options {
+    list-style: none;
+    color: var(--text);
+    font-family: var(--text-font);
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.schedule {
+    font-family: var(--title-font);
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--title);
+}
+
+.pres-float {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 60vw;
+    top: 1vw;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.9 );
+    border-radius: 5px;
+    box-shadow: 0px 20px 60px -30px var(--color-blue);
+    backdrop-filter: blur(6px);
+    padding: 20px 70px;
+}
+
+.float-info-1 {
+    font-family: var(--text-font);
+    color: var(--text);
+}
+
+.float-info-2 {
+    font-family: var(--title-font);
+    color: var(--title);
+    font-weight: bold;
+}
+
+.float-button {
+    font-family: var(--text-font);
+}
+
+@media (max-width: 780px){
+    .presentation {
+        height: 126vh;
+    }
+}
+
+/* ----------- Vaccines ----------- */
+.cards-section {
+    padding: 70px;
+}
+
+.vaccines-logo img {
+    height: 80px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.vaccines-logo {
+    width: 22vw;
+}
+
+/* ----------- Cards ----------- */
+.cards-text h2 {
+    font-family: var(--text-font);
+    color: var(--title);
+}
+
+.cards-text p {
+    font-family: var(--text-font);
+    color: var(--text);
+    font-size: 15px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 5px solid #f1f5ff62;
+    border-radius: 5px;
+    display: inline;
+    width: 15vw;
+    height: 200px;
+    padding: 20px;
+    backdrop-filter: blur(50px);
+}
+
+.card-title {
+    font-family: var(--title-font);
+    color: var(--title);
+    font-size: 14px;
+}
+
+.card-text {
+    font-family: var(--title-font);
+    color: var(--text);
+    font-size: 12px;
+}
+
+.card:hover {
+    box-shadow: 0px 73px 105px -79px var(--color-blue);
+}
+
+/* ----------- Preparations Before Vaccine ----------- */
+.preparation {
+    margin-bottom: 50px;
+}
+
+.prediv {
+    display: flex;
+}
+
+.pre-section {
+    padding: 50px 50px 0px 50px;
+}
+
+.pre-left img {
+    width: 100%;
+    margin-top: auto;
+    bottom: 0;
+}
+
+.pre-left {
+    flex: 1;
+    background-image: linear-gradient(180deg, white 35%, var(--lightblue-1) 35%);
+    text-align: center;
+    display:flex;
+}
+
+.pre-right h2 {
+    font-family: var(--title-font);
+    font-weight: bold;
+    color: var(--title);
+}
+
+.pre-right h4, .block span {
+    font-family: var(--text-font);
+    font-weight: bold;
+    color: var(--title);
+    margin: 10px;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.pre-right p {
+    font-family: var(--text-font);
+    font-size: 12px;
+    color: var(--text);
+}
+
+.pre-right {
+    width: 45%;
+}
+
+.block {
+    border: 2px solid var(--button);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 22px 138px -42px var(--color-blue);
+}
+
+.block span {
+    cursor: pointer;
+    display: block;
+}
+
+.check-span::after {
+    float: right;
+    right: 10%;
+    content: "+";
+}
+
+.slide li {
+    font-family: var(--text-font);
+    font-size: 12px;
+    color: var(--text);
+    list-style: none;
+}
+
+#touch1, #touch2, #touch3, #touch4, #touch5 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#slide1, #slide2, #slide3, #slide4, #slide5 {
+    clear: both;
+    height: 0px;
+    margin: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch1:checked + #slide1{height: 50px;}
+
+#touch2:checked + #slide2{height: 60px;}
+
+#touch3:checked + #slide3{height: 50px;}
+
+#touch4:checked + #slide4{height: 50px;}
+
+#touch5:checked + #slide5{height: 50px;}
+
+/* ----------- Emergency contact ----------- */
+.emergency-contact {
+    display: flex;
+}
+
+.emergency-info h2 {
+    font-family: var(--title-font);
+    color: var(--text-font);
+}
+
+.emergency-info p {
+    font-family: var(--text-font);
+    color: var(--text);
+    font-size: 12px;
+}
+
+.em-blocks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.em-blocks-1 {
+    margin-bottom: 20px;
+}
+
+.em-block h3 {
+    font-family: var(--text-font);
+    color: var(--title);
+    margin-bottom: 0;
+}
+
+.em-block p {
+    font-family: var(--text-font);
+    font-size: 10px;
+    color: var(--text);
+}
+
+.em-block {
+    border: 2px solid var(--button);
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+.em-block:hover {
+    box-shadow: 0px 17px 137px -45px var(--color-blue);
+}
+
+.now-button {
+    background-color: var(--button);
+    color: var(--color-blue);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: none;
+    width: 110px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.now-button:hover {
+    background-color: var(--color-blue);
+    color: white;
+    box-shadow: 0px 15px 18px -15px var(--color-blue);
+}
+
+
+/* ----------- footer ----------- */
+footer {
+    background-color: var(--button);
+    padding: 20px 20px 5px 20px;
+    margin-top: 50px;
+}
+
+footer h3 {
+    font-family: var(--title-font);
+    font-weight: bold;
+    color: var(--title);
+    font-size: 15px;
+}
+
+footer p {
+    font-family: var(--text-font);
+    font-size: 12px;
+    color: var(--text);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.menus {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 100%;
+    justify-content: space-around;
+}
+
+.footer-logo {
+    color: var(--color-blue);
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.info-footer {
+    margin-bottom: 80px;
+}
+
+.info-block-1 {
+    width: 50%;
+}
+
+.rights {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.policies p {
+    display: inline;
+    margin-left: 20px;
+}
+
+.sign {
+    width: 65%;
+}
+
+#content1::after {
+    content: "\a";
+    white-space: pre;
+}
+
+#content2::after {
+    content: "\a";
+    white-space: pre;
+}

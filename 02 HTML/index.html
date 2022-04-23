@@ -9,6 +9,28 @@
                 text-align: center;
             }
 
+            body {
+                background-color: rgb(255, 223, 227);
+            }
+
+            label {
+                display: inline-block;
+                margin-left: 50px;
+                width: 100px;
+            }
+
+            select {
+                display: inline-block;
+                margin-left: 0px;
+                width: 177px;
+            }
+
+            footer {
+                background-color: rgb(226, 199, 252);
+                margin-top: 30px;
+                padding: 40px;
+            }
+
             .selector img {
                 width: 100%;
             }
@@ -16,7 +38,7 @@
             .main-title {
                 position: absolute;
                 top: 20%;
-                right: 40%;
+                left: 45%;
                 color: white;
             }
 
@@ -34,12 +56,76 @@
                 margin: 5px;
                 border: 1px solid black;
                 border-radius: 1%;
+                width: 50%;
+                background-color: white;
             }
 
             .title {
                 height: 50vh;
                 text-align: center;
-            }            
+            }
+
+            .price {
+                display: flex;
+                justify-content: center;
+            }
+
+            .price p, .price a {
+                margin: 5px;
+            }
+            
+            .plus-btn {
+                border-radius: 100%;
+                border: 1px solid black;
+                background-color: lightsteelblue;
+                color: white;
+                text-decoration: none;
+                width: 20px;
+                height: 20px;
+                margin-top: 5px;
+                cursor: pointer;
+            }
+
+            .plus-btn:focus {
+                background-color: lightgreen;
+            }
+
+            .subtitle {
+                margin-top: 10px;
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            .chocolate {
+                border: 2px dashed brown;
+            }
+
+            .strawberry {
+                border: 2px dashed red;
+            }
+
+            .vanilla {
+                border: 2px dashed lightgoldenrodyellow;
+            }
+
+            .form {
+                width: 50vw;
+                margin: auto;
+                padding: 50px;
+                border: 5px solid lightblue;
+                background-color: #dffffb;
+                border-radius: 30px;
+            }
+
+            .form div {
+                margin: 5px;
+            }
+
+            .info, .schedules {
+                display: inline-block;
+                margin-left: 150px;
+                margin-right: 150px;
+            }
         </style>
     </head>
     <body>
@@ -49,6 +135,10 @@
                 <h1>Pastelería</h1>
             </div>
         </div>
+
+        <!-- Pasteles -->
+        <br>
+        <h2>Pasteles</h2>
         <div class="selector">
             <div class="product">
                 <div class="image">
@@ -59,7 +149,10 @@
                 <div class="description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, in pariatur dolorum provident officia, tempore ipsa sit voluptate harum possimus facere est a similique itaque.</p>
                     <br>
-                    <p>Precio: $999.99</p>
+                    <div class="price">
+                        <p>Precio: $999.99</p>
+                        <button class="plus-btn">+</button>
+                    </div>
                 </div>
             </div>
             <div class="product">
@@ -70,7 +163,10 @@
                 <div class="description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, in pariatur dolorum provident officia, tempore ipsa sit voluptate harum possimus facere est a similique itaque.</p>
                     <br>
-                    <p>Precio: $999.99</p>
+                    <div class="price">
+                        <p>Precio: $999.99</p>
+                        <button href="#" class="plus-btn">+</button>
+                    </div>
                 </div>
             </div>
             <div class="product">
@@ -82,10 +178,192 @@
                 <div class="description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, in pariatur dolorum provident officia, tempore ipsa sit voluptate harum possimus facere est a similique itaque.</p>
                     <br>
-                    <p>Precio: $999.99</p>
+                    <div class="price">
+                        <p>Precio: $999.99</p>
+                        <button href="#" class="plus-btn">+</button>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Sabores -->
+        <br>
+        <h2>Sabores</h2>
+        <div class="selector">
+            <div class="product chocolate">
+                <div class="image">
+                    <p class="subtitle">
+                        Chocolate
+                    </p>
+                </div>
+                <br>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, in pariatur dolorum provident officia, tempore ipsa sit voluptate harum possimus facere est a similique itaque.</p>
+                    <br>
+                    <div class="price">
+                        <p>Precio extra: $5.99</p>
+                        <button href="#" class="plus-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product strawberry">
+                <div class="image">
+                    <p class="subtitle">
+                        Fresa
+                    </p>
+                </div>
+                <br>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, in pariatur dolorum provident officia, tempore ipsa sit voluptate harum possimus facere est a similique itaque.</p>
+                    <br>
+                    <div class="price">
+                        <p>Precio extra: $5.99</p>
+                        <button href="#" class="plus-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product vanilla">
+                <div class="image">
+                    <p class="subtitle">
+                        Vainilla
+                    </p>
+                </div>
+                <br>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, in pariatur dolorum provident officia, tempore ipsa sit voluptate harum possimus facere est a similique itaque.</p>
+                    <br>
+                    <div class="price">
+                        <p>Precio extra: $5.99</p>
+                        <button href="#" class="plus-btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adornos -->
+        <br>
+        <h2>Adornos</h2>
+        <div class="selector">
+            <div class="product">
+                <div class="image">
+                    <img src="https://previews.123rf.com/images/erierika/erierika1208/erierika120800092/15027876-pastel-blanco-con-adornos-de-chocolate-y-mazap%C3%A1n-rosa-roja-sobre-fondo-estrellas-de-oro.jpg" alt="">
+                </div>
+                <br>
+                <br>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, in pariatur dolorum provident officia, tempore ipsa sit voluptate harum possimus facere est a similique itaque.</p>
+                    <br>
+                    <div class="price">
+                        <p>Precio extra: $10.99</p>
+                        <button href="#" class="plus-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <br>
+                <div class="image">
+                    <img src="https://elblogdeunanovia.com/wp-content/uploads/2014/01/los-pajaritos1.jpg" alt="">
+                </div>
+                <br><br>
+                <br>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, in pariatur dolorum provident officia, tempore ipsa sit voluptate harum possimus facere est a similique itaque.</p>
+                    <br>
+                    <div class="price">
+                        <p>Precio extra: $10.99</p>
+                        <button href="#" class="plus-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="https://cdn0.bodas.com.mx/article-real-wedding/093/original/1280/jpg/1229457.jpeg" alt="">
+                </div>
+                <br>
+                <br>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, in pariatur dolorum provident officia, tempore ipsa sit voluptate harum possimus facere est a similique itaque.</p>
+                    <br>
+                    <div class="price">
+                        <p>Precio extra: $10.99</p>
+                        <button href="#" class="plus-btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <br>
+        <div class="form">
+            <h1 class="form-title">¡Encarga tu pastel aquí!</h1>
+            <br>
+            <br>
+            <form>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="number" name="telefono" id="telefono">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="cake">Pastel:</label>
+                    <select name="cake" id="cake">
+                        <option value="cake1">Pastel 1</option>
+                        <option value="cake2">Pastel 2</option>
+                        <option value="cake3">Pastel 3</option>
+                    </select>
+                </div>
+
+                <br>
+                <div>
+                    <p>Descripción del pastel: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptas sit provident id ipsam expedita laudantium cum dolore. Sapiente, earum!</p>
+                </div>
+                <br>
+
+                <div>
+                    <label for="flavor">Sabor:</label>
+                    <select name="flavor" id="flavor">
+                        <option value="chocolate">Chocolate</option>
+                        <option value="strawberry">Fresa</option>
+                        <option value="Vanilla">Vainilla</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="decoration">Adorno:</label>
+                    <select name="decotarion" id="">
+                        <option value="decoration1">Adorno 1</option>
+                        <option value="decoration 2">Adorno 2</option>
+                        <option value="decoration 3">Adorno 3</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="info">
+                    <p>Dirección: Lorem ipsum dolor sit amet.</p>
+                    <br>
+                    <p>Teléfono: 55 55 55 55 55</p>
+                </div>
+
+                <div class="schedules">
+                    <h2>Horarios de atención</h6>
+                        <br>
+                    <p>Lunes a viernes: 9am - 10pm</p>
+                    <p>Sábados: 10am - 8pm</p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
-
