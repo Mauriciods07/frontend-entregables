@@ -4,5 +4,3 @@ En este ejercicio, se maquetó una página para ayudar a conocer el estado de la
 
 Para esto, se usó HTML y CSS.
 
-Página:
-https://mauriciods07.github.io/frontend-entregables/
